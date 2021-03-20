@@ -28,6 +28,10 @@ function compute()
 
     document.getElementById('result4').innerHTML = "in the year " + toyear;
 
+    if(principal <= 0){
+        return  alert('Enter a positive number');
+    } 
+
     
 }
 
@@ -38,17 +42,3 @@ function myFunction(){
     document.getElementById("show").innerHTML = getrate + " %";
 
 }
-
-function checkName(){
-    var checknum = check.value;
-    if(checknum <= 0){
-       noti.innerHTML = 'Enter a positiv number';
-    } else{
-        noti.innerHTML = '';
-    }
-}
-
-var noti = document.getElementById('noti');
-
-var check = document.getElementById('principal');
-        
