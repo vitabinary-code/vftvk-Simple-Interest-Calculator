@@ -39,5 +39,16 @@ function myFunction(){
 
 }
 
+function checkName(){
+    var checknum = check.value;
+    if(checknum <= 0){
+       noti.innerHTML = 'Enter a positiv number';
+    } else{
+        noti.innerHTML = '';
+    }
+}
 
+var noti = document.getElementById('noti');
+
+var check = document.getElementById('principal');
         
